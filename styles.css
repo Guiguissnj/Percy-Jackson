@@ -1,63 +1,69 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: Arial, sans-serif;
-    background-color: #1a1a3d;
-    color: #f3f3f3;
-}
-
-header {
-    background-color: #2e3b55;
-    padding: 20px;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #003366;
+    color: #fff;
     text-align: center;
-}
-
-header h1 {
-    color: #ffdf00;
-    font-size: 2em;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav a {
-    color: #f3f3f3;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin: 20px 0;
-}
-
-.book {
-    display: inline-block;
+    padding: 1rem 0;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  .books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .book {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 15px;
-}
-
-.book img {
-    width: 150px;
-    height: auto;
-    border: 2px solid #ffdf00;
-}
-
-footer {
-    background-color: #2e3b55;
-    padding: 10px;
+    padding: 1rem;
+  }
+  
+  .book img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  
+  .book h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #003366;
+  }
+  
+  .book p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  footer {
+    background-color: #003366;
+    color: #fff;
     text-align: center;
-    color: #f3f3f3;
-    font-size: 0.9em;
-}
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
